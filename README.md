@@ -13,13 +13,15 @@ A Polars extension that provides n-gram functionality for string columns, implem
 - Native Rust implementation for high performance
 - Seamless integration with Polars expressions
 
-## Installation
+## Install
 
 ### Requirements
 
 - Python>=3.9
 - Rust toolchain
 - Maturin
+
+### Building from source
 
 To install `polars-ngrams`, you can clone this repository and build from source. You must have the above requirements to build the wheel. I recommend using `uv` if you don't already have it, but it's not required. You can follow the instructions below to build from source after cloning the repository to your local machine.
 
@@ -34,6 +36,16 @@ source .venv/bin/activate
 pip install -r requirements.txt
 maturin develop --release
 ```
+
+#### Adding to project
+
+From here, you can include the plugin in your project by installing the wheel directly to your project's environment. 
+
+```bash
+pip install /path/to/wheel # e.g. target/wheels/polars_ngrams-0.1.0-cp39-abi3-linux_x86_64.whl
+```
+
+If the build is successful, the output will be under `./target/wheels/*.whl`. You can 
 
 ## Usage
 

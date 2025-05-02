@@ -39,13 +39,12 @@ maturin develop --release
 
 #### Adding to project
 
-From here, you can include the plugin in your project by installing the wheel directly to your project's environment. 
+If the build is successful, the output will be under `./target/wheels/*.whl`. From here, you can include the plugin in your project by installing the wheel directly to your project's environment. 
 
 ```bash
 pip install /path/to/wheel # e.g. target/wheels/polars_ngrams-0.1.0-cp39-abi3-linux_x86_64.whl
 ```
 
-If the build is successful, the output will be under `./target/wheels/*.whl`. You can 
 
 ## Usage
 

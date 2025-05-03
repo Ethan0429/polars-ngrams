@@ -20,4 +20,4 @@ result_df = df.with_columns(
         include_whitespace=True,
     ),
 )
-print(result_df.collect())
+print(result_df.collect(engine="streaming"))
